@@ -182,6 +182,6 @@ class MealTableViewController: UITableViewController {
     }
     
     private func loadMeals() -> [Meal]? {
-        return NSKeyedUnarchiver.unarchivedObject(withFile: Meal.ArchiveURL.path) as? [Meal]
+        return NSKeyedUnarchiver.unarchiveObject(withFile: Meal.ArchiveURL.path) as? [Meal]
     }
 }
